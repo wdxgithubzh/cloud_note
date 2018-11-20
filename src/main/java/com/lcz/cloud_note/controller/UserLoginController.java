@@ -17,7 +17,7 @@ public class UserLoginController {
 	@Resource
 	private UserService userService;
 	
-	@RequestMapping(value = "/login",method= RequestMethod.GET)//匹配请求
+	@RequestMapping(value = "/login.do",method= RequestMethod.POST)//匹配请求
 	@ResponseBody //以json结果输出
 	public NoteResult<User> execute(String name,String password){
 		//调用UserService处理登录请求

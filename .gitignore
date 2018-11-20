@@ -1,0 +1,9 @@
+/.settings
+.project
+.classpath
+.vscode
+.idea
+.DS_Store
+diamond-api.iml
+/logs
+.idea/

@@ -7,16 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="673def0b-55db-48ba-9274-f722761cf466" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/DeleteNoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/DeleteNoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/LoadShareNoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/LoadShareNoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lcz/cloud_note/controller/UserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lcz/cloud_note/controller/UserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/lcz/cloud_note/controller/UserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/lcz/cloud_note/controller/UserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +28,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="html" value="2" />
           <entry key="java" value="17" />
           <entry key="js" value="7" />
@@ -49,12 +40,13 @@
           <entry key="HTML" value="2" />
           <entry key="JAVA" value="17" />
           <entry key="JavaScript" value="7" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="1" />
           <entry key="html" value="132" />
           <entry key="java" value="16" />
           <entry key="js" value="98" />
@@ -66,7 +58,7 @@
           <entry key="HTML" value="132" />
           <entry key="JAVA" value="16" />
           <entry key="JavaScript" value="98" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
     </session>
@@ -93,14 +85,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="330" column="58" lean-forward="true" selection-start-line="330" selection-start-column="58" selection-end-line="330" selection-end-column="58" />
+            <state relative-caret-position="2654">
+              <caret line="330" column="59" lean-forward="true" selection-start-line="330" selection-start-column="59" selection-end-line="330" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#aside#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -133,13 +134,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/UserLoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/DeleteNoteController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/LoadShareNoteController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/MoveNoteController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/login.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/edit.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -367,7 +368,7 @@
       <option name="presentableId" value="Default" />
       <updated>1542696996905</updated>
       <workItem from="1542697003617" duration="2455000" />
-      <workItem from="1542699982934" duration="6753000" />
+      <workItem from="1542699982934" duration="7096000" />
     </task>
     <task id="LOCAL-00001" summary="过滤文件">
       <created>1542698389174</created>
@@ -380,7 +381,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9222000" />
+    <option name="totallyTimeSpent" value="9565000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,7 +396,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24954462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2489895" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -406,7 +407,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3285968" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37300178" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37300178" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -440,13 +441,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="过滤文件" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/alert.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -589,11 +583,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="330" column="58" lean-forward="true" selection-start-line="330" selection-start-column="58" selection-end-line="330" selection-end-column="58" />
+        <state relative-caret-position="2654">
+          <caret line="330" column="59" lean-forward="true" selection-start-line="330" selection-start-column="59" selection-end-line="330" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#aside#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>

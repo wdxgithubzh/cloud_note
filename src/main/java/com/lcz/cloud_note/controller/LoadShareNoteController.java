@@ -17,7 +17,7 @@ import com.lcz.cloud_note.util.NoteResult;
 public class LoadShareNoteController {
 	@Resource
 	private ShareService shareService;
-	@RequestMapping("/load_share")
+	@RequestMapping("/load_share.do")
 	@ResponseBody
 	public NoteResult<Share> execute(String shareId){
 		NoteResult<Share> result = shareService.loadShareNote(shareId);

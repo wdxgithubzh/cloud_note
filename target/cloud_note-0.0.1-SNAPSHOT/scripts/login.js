@@ -46,7 +46,7 @@ function registerUser(){
 	if(ok){//数据校验通过
 		$.ajax({
 			url:base_path+"/user/add.do",
-			type:"get",
+			type:"post",
 			data:{"name":name,"nick":nick,"password":password},
 			dataType:"json",
 			success:function(result){
@@ -64,9 +64,10 @@ function registerUser(){
 		});
 	}
 }
+//TODO:登录这块有问题->该问题已解决。问题出在：若MVC中使用的拦截是*.do那之后的controller、js等全都使用.do
 //登录处理
 function checkLogin(){
-	alert(11);
+	// alert(11);
 	//获取参数
 	var name=$("#count").val().trim();//获取输入的账号
 	var password=$("#password").val().trim();//获取输入的密码
@@ -87,8 +88,8 @@ function checkLogin(){
 	if(ok){  //检测格式通过
 		//发送ajax请求
 		$.ajax({
-			url:base_path+"/user/login",
-			type:"get",
+			url:base_path+"/user/login.do",
+			type:"post",
 			data:{"name":name,"password":password},
 			dataType:"json",
 			success:function(result){

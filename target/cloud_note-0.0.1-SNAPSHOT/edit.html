@@ -324,27 +324,20 @@
 										<input type="text" class="form-control" id="input_note_title" placeholder='笔记标题...'>
 									</div>
 								</div>
+
+
+								<!--- 笔记标题 --->
+								<div class="row">
+									<div class="col-xs-8">
+										<!--- 输入框 --->
+										<input type="text/plain" id="myEditor" style="width:100%;height:400px;"></input>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</aside>
 			</div>
-								
-								<!--- 笔记标题 --->
-								<!--<div class="row">-->
-									<!--<div class="col-sm-12">-->
-										<!--&lt;!&ndash;- 输入框 -&ndash;&gt;-->
-										<!--<script type="text/plain" id="myEditor" style="width:100%;height:400px;">-->
-										<!--</script>-->
-										<!--&lt;!&ndash;- 输入框 -&ndash;&gt;-->
-									<!--</div>-->
-								<!--</div>-->
-								<!---->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</div>-->
-				<!--</aside>-->
-			<!--</div>-->
 			
 			<!-- 预览笔记 -->
 			<div class="col-sm-7"; id='pc_part_5'; style='display:none;' >
@@ -413,6 +406,7 @@
 					$('.opacity_bg').show();
 				});
 			};
+
 			//实例化Ueditor编辑器
 			var um = UM.getEditor('myEditor');
 

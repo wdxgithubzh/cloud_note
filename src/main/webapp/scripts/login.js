@@ -67,7 +67,7 @@ function registerUser(){
 //TODO:登录这块有问题->该问题已解决。问题出在：若MVC中使用的拦截是*.do那之后的controller、js等全都使用.do
 //登录处理
 function checkLogin(){
-	alert(11);
+	// alert(11);
 	//获取参数
 	var name=$("#count").val().trim();//获取输入的账号
 	var password=$("#password").val().trim();//获取输入的密码

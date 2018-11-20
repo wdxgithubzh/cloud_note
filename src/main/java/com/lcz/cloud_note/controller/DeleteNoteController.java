@@ -14,7 +14,7 @@ import com.lcz.cloud_note.util.NoteResult;
 public class DeleteNoteController {
 	@Resource
 	private NoteService noteService;
-	@RequestMapping("/delete")
+	@RequestMapping("/delete.do")
 	@ResponseBody
 	public NoteResult execute(String noteId){
 		NoteResult result=noteService.deleteNote(noteId);

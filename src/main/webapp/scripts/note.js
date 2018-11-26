@@ -90,6 +90,7 @@ function loadNote(){
 }
 //更新笔记信息（保存笔记）事件
 function updateNote() {
+
 	//获取参数
 	var $li=$("#note_ul a.checked").parent();
 	//获取笔记Id
@@ -97,6 +98,7 @@ function updateNote() {
 	//获取笔记的标题和内容
 	var noteTitle=$("#input_note_title").val().trim();
 	var noteBody=um.getContent();
+
 	//发送ajax请求
 	$.ajax({
 		url:base_path+"/note/update.do",

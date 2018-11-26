@@ -5,6 +5,7 @@
 .vscode
 .idea
 .DS_Store
-diamond-api.iml
+cloud_note.iml
+.class
 /logs
 .idea/

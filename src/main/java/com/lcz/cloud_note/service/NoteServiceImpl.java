@@ -20,7 +20,7 @@ public class NoteServiceImpl implements NoteService {
 	@Resource
 	private NoteDao noteDao;
 	@Resource ShareDao shareDao;
-	
+	//加载笔记本
 	public NoteResult<List<Map>> loadBookNotes(String bookId) {
 		//返回数据集合
 		List<Map> list = noteDao.findByBookId(bookId);

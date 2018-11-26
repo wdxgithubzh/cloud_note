@@ -16,7 +16,7 @@
 		<!-- Google-Code代码高亮CSS -->
         <link rel="stylesheet" href="styles/prettify.css"/>
 		<!-- Ueditor编辑器CSS -->
-		<link href="styles/umeditor.min.css" type="text/css" rel="stylesheet"> 
+		<link href="styles/umeditor.min.css" type="text/css" rel="stylesheet">
 	
 		
 		<!-- 全局变量&&AJAX&&COOKIE -->
@@ -38,8 +38,9 @@
 				//绑定单击笔记加载信息事件
 				$("#note_ul").on("click","li",loadNote);//存储在note.js中
 				//更新笔记信息（保存笔记）事件
-				$("#save_note").click(updateNote);//存储在note.js中
-				
+				// $("#save_note").on('click',updateNote);//存储在note.js中
+				$(document).on('click','#save_note',updateNote);
+
 				//弹出创建笔记本的alert
 				$("#add_notebook").click(alertAddBookWindow);//弹出新建笔记本的对话框 在alert.js中
 				//关闭对话框(动态绑定),对所有对话框都有效
@@ -122,14 +123,15 @@
 		<script type="text/javascript" charset="utf-8" src="scripts/common/ue/umeditor.config.js"></script>
 		<script type="text/javascript" charset="utf-8" src="scripts/common/ue/umeditor.min.js"></script>
 		<script type="text/javascript" src="scripts/common/ue/lang/zh-cn.js"></script>
+
 		 <!-- Bootstrap框架JS -->
         <script src="scripts/common/bootstrap.min.js"></script>
         <script src="scripts/common/js-prototype.js"></script>       
         <script src="scripts/common/theme-setup.js"></script>
+
+	</head>
 		
-		
-		
-    </head>
+
     <body class="animated fadeIn">
         <header class="header">
             <div class="header-brand">
@@ -182,12 +184,7 @@
 					<div class="module" data-toggle="niceScroll">
 						<div class="chat-contact">
 							<div class="contact-body">
-								<ul id="book_ul" class="contacts-list">
-									<!------------ ajax加载 --------------->
-									<!-- 
-									--------插入部分
-									 -->
-								</ul>
+								<ul id="book_ul" class="contacts-list"></ul>
 							</div>
 						</div>
 					</div>
@@ -209,12 +206,7 @@
 					<div class="module" data-toggle="niceScroll">
 						<div class="chat-contact">
 							<div class="contact-body">
-								<ul id="note_ul"  class="contacts-list">
-									
-									<!-- -------------------ajax自动加载出来 --------------------->
-									
-									<!-- ---------------------------------------------------- -->
-								</ul>
+								<ul id="note_ul"  class="contacts-list"></ul>
 							</div>
 						</div>
 					</div>
@@ -231,7 +223,12 @@
 						<div class="chat-contact">
 							<div class="contact-body">
 								<ul class="contacts-list">
-									<li class="disable"><a ><i class="fa fa-file-text-o" title="online" rel="tooltip-bottom"></i> 虚假回收站笔记<button type="button" class="btn btn-default btn-xs btn_position btn_delete"><i class="fa fa-times"></i></button><button type="button" class="btn btn-default btn-xs btn_position_2 btn_replay"><i class="fa fa-reply"></i></button></a></li>
+									<li class="disable">
+										<a ><i class="fa fa-file-text-o" title="online" rel="tooltip-bottom"></i>
+											虚假回收站笔记<button type="button" class="btn btn-default btn-xs btn_position btn_delete"><i class="fa fa-times"></i></button>
+														<button type="button" class="btn btn-default btn-xs btn_position_2 btn_replay"><i class="fa fa-reply"></i></button>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -272,7 +269,7 @@
 						<div class="chat-contact">
 							<div class="contact-body">
 								<ul class="contacts-list">
-									<!-- <li class="idle"><a ><i class="fa fa-file-text-o" title="online" rel="tooltip-bottom"></i> switch多分支结构<button type="button" class="btn btn-default btn-xs btn_position btn_delete"><i class="fa fa-times"></i></button></a></li> -->
+									 <li class="idle"><a ><i class="fa fa-file-text-o" title="online" rel="tooltip-bottom"></i> switch多分支结构<button type="button" class="btn btn-default btn-xs btn_position btn_delete"><i class="fa fa-times"></i></button></a></li>
 								</ul>
 							</div>
 						</div>
@@ -290,16 +287,14 @@
 						<div class="chat-contact">
 							<div class="contact-body">
 								<ul class="contacts-list">
-									<!-- 
 									<li class="offline"><a ><i class="fa fa-file-text-o" title="online" rel="tooltip-bottom"></i> 样式用例（点击无效）</a></li>
-									 -->
 								</ul>
 							</div>
 						</div>
 					</div>
 				</aside>
 			</div>
-			
+
 			<!-- 编辑笔记 -->
 			<div class="col-sm-7" id='pc_part_3'>
 				<!-- side-right -->
@@ -317,20 +312,16 @@
 					<div class="module" data-toggle="niceScroll">
 						<div class="chat-contact">
 							<div class="contact-body clear_margin">
-								
 								<!--- 笔记标题 --->
 								<div class="row" >
 									<div class="col-xs-8">
 										<input type="text" class="form-control" id="input_note_title" placeholder='笔记标题...'>
 									</div>
 								</div>
-
-
-								<!--- 笔记标题 --->
 								<div class="row">
 									<div class="col-sm-12">
-										<!--- 输入框 --->
-										<input type="text/plain" id="myEditor" style="width:100%;height:400px;"></input>
+										<!-- 加载编辑器的容器 -->
+										<script id="myEditor" name="content" type="text/plain"></script>
 									</div>
 								</div>
 							</div>
@@ -363,7 +354,7 @@
         <footer>
             <p>&copy; 2018; by; CodingChaozhang</p>
 			<div style='position:absolute;top:5PX;height:30px;right:20px;line-height:26px;border:1px solid #0E7D76;display:none;background:#fff'>
-				<strong style='color:#0E7D76;margin:0 10px;'></strong>
+				<strong style='color:#4e8676;margin:0 10px;'></strong>
 			</div>
         </footer>
 		<script type="text/javascript">
@@ -409,6 +400,10 @@
 
 			//实例化Ueditor编辑器
 			var um = UM.getEditor('myEditor');
+			//解决编辑器宽度问题
+			um.setWidth("100%");
+			//css样式宽度
+			$(".edui-body-container").css("width","98%");
 
 		</script>
 

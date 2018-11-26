@@ -16,7 +16,7 @@ public class UpdateNoteController {
 	private NoteService noteService;
 	@RequestMapping("/update.do")
 	@ResponseBody
-	public NoteResult<Object>  execute(String noteId,String title,String body){
+	public NoteResult<Object> execute(String noteId,String title,String body){
 		NoteResult<Object> result = noteService.updateNote(noteId, title, body);
 		return result;
 	}
